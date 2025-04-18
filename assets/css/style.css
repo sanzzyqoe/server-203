@@ -12,12 +12,10 @@
 03. Header
 04. Home
 05. About
-06. Services
-07. Portfolio
-08. Blog
-09. Contact
-10. Footer
-11. Theme Control
+06. 
+07. Blog
+08. Footer
+09. Theme Control
 ============================
 */
 
@@ -68,7 +66,7 @@ body {
 	color: var(--black);
 	overflow-x: hidden;
 	background-color: var(--background);
-	padding: 24px 0 24px 0;
+	padding: 20px 0 20px 0;
 	min-height: 100vh;
 }
 
@@ -418,12 +416,12 @@ p {
 
 .profile-card .image {
 	background-color: var(--background);
-	border-radius: 8px;
+	border-radius: 10px;
 	overflow: hidden;
 }
 
 .profile-card .image img {
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 .profile-card .text {
@@ -799,7 +797,7 @@ p {
 
 .content-box-area .profile-card {
 	position: sticky;
-	top: 94px;
+	top: 94x;
 }
 
 .content-box-area .card {
@@ -1368,424 +1366,8 @@ p {
 		transform: translateX(calc(-100% - 1.5rem))
 	}
 }
-
 /*=============================
-	06. services page CSS STart
-===============================*/
-
-.services {
-	margin-bottom: 50px;
-	margin-top: 60px;
-}
-
-.services .block-image {
-	margin: 50px 0;
-	margin-top: 56px;
-	border-radius: 8px;
-	aspect-ratio: 16 / 9;
-	overflow: hidden;
-}
-
-.services .block-image img {
-	border-radius: 8px;
-	object-fit: cover;
-	height: 100%;
-}
-
-.content-box-card .frequently-asked-questions {
-	margin-top: 50px;
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:focus {
-	box-shadow: none;
-}
-
-.content-box-card .frequently-asked-questions .accordion-item {
-	border: 0;
-	margin: 16px 0;
-	border: 1px solid var(--border);
-	border-radius: 8px !important;
-}
-
-.content-box-card .frequently-asked-questions .accordion-button {
-	font-size: 24px;
-	font-weight: 500;
-	color: var(--black);
-	background-color: transparent;
-	background-color: var(--background);
-	padding: 24px;
-	border-radius: 8px;
-}
-
-.content-box-card .frequently-asked-questions .accordion-body {
-	padding: 24px;
-	padding-top: 0;
-}
-
-.content-box-card .frequently-asked-questions .accordion-body p {
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.5em;
-	color: var(--black);
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:hover {
-	color: var(--light-black);
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:not(.collapsed) {
-	background-color: transparent;
-	box-shadow: none;
-	color: var(--primary);
-}
-
-.content-box-card .frequently-asked-questions .accordion-button .icon {
-	width: 32px;
-	height: 32px;
-	background-color: var(--white);
-	border-radius: 4px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:not(.collapsed) .icon {
-	background-color: var(--background);
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:not(.collapsed) .icon .icon-plus {
-	display: none;
-}
-
-.content-box-card .frequently-asked-questions .accordion-button:not(.collapsed) .icon .icon-minus {
-	display: flex !important;
-}
-
-.content-box-card .frequently-asked-questions .accordion-button::after {
-	display: none;
-}
-
-/*=============================
-	07. Portfolio page CSS Start
-===============================*/
-
-.portfolio-card .top-info {
-	display: block;
-}
-
-.portfolio-card .top-info .text {
-	max-width: unset;
-	width: 100%;
-}
-
-.portfolio-card .top-info .text p {
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 1.5em;
-}
-
-.portfolio-area .portfolio-item .image {
-	padding: 40px;
-	padding-bottom: 0;
-	background-color: var(--background);
-	border-radius: 16px;
-	position: relative;
-}
-
-.portfolio-area .portfolio-item .image img {
-	border-radius: 8px;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-.portfolio-area .portfolio-item .image .full-image-preview {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%);
-	z-index: 9;
-	width: 40px;
-	height: 40px;
-	background-color: var(--white);
-	border-radius: 50%;
-	text-align: center;
-	line-height: 38px;
-	color: var(--primary);
-	filter: drop-shadow(0 12px 12px rgba(26, 31, 44, 0.25));
-	margin-top: -10px;
-	transition: var(--transision);
-	visibility: hidden;
-	opacity: 0;
-}
-
-.portfolio-area .portfolio-item .image .full-image-preview .icon {
-	width: 22px;
-	height: 22px;
-}
-
-.portfolio-area .portfolio-item .image:hover .full-image-preview {
-	visibility: visible;
-	opacity: 1;
-}
-
-.portfolio-area .portfolio-item .text {
-	display: flex;
-	gap: 30px;
-	justify-content: space-between;
-	padding: 24px;
-}
-
-.portfolio-area .portfolio-item .text .info .title {
-	font-size: 24px;
-	font-weight: 500;
-	color: var(--black);
-	line-height: 1.3em;
-	border-bottom: 1px solid transparent;
-	margin-bottom: 2px;
-}
-
-.portfolio-area .portfolio-item .text .info .title:hover {
-	color: var(--primary);
-	border-color: var(--primary);
-}
-
-.portfolio-area .portfolio-item .text .info .subtitle {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.5em;
-	color: var(--light-black);
-}
-
-.portfolio-area .portfolio-item .text .visite-btn a {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1em;
-	color: var(--light-black);
-}
-
-.portfolio-area .portfolio-item .text .visite-btn a .arrow-up {
-	stroke: var(--light-black);
-	margin-left: 2px;
-}
-
-.portfolio-area .portfolio-item .text .visite-btn a:hover {
-	color: var(--primary);
-}
-
-.portfolio-area .portfolio-item .text .visite-btn a:hover .arrow-up {
-	stroke: var(--primary);
-}
-
-.pagination {
-	display: flex;
-	justify-content: center;
-	margin-top: 40px;
-}
-
-.pagination ul {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-}
-
-.pagination ul li button {
-	width: 36px;
-	height: 36px;
-	border: 1px solid var(--border);
-	border-radius: 8px;
-	font-size: 16px;
-	font-weight: 400;
-	color: var(--light-black);
-	background-color: var(--white);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.pagination ul li button:hover {
-	border-color: var(--primary);
-	color: var(--primary);
-}
-
-.pagination ul li .next-page-btn {
-	position: relative;
-}
-
-.pagination ul li .next-page-number {
-	position: absolute;
-	top: -28px;
-	left: 50%;
-	transform: translateX(-50%);
-	white-space: nowrap;
-	background-color: var(--black);
-	font-size: 12px;
-	font-weight: 600;
-	color: var(--white);
-	border-radius: 5px;
-	padding: 4px 12px;
-	line-height: 14px;
-	display: none;
-}
-
-.pagination ul li .next-page {
-	display: none;
-}
-
-.pagination ul li button .icon {
-	width: 16px;
-	height: 16px;
-	stroke: var(--light-black);
-}
-
-.pagination ul li button:hover .icon {
-	stroke: var(--primary);
-}
-
-.pagination ul li button:hover .next-page {
-	display: block;
-}
-
-.pagination ul li button:hover .dots {
-	display: none;
-}
-
-.pagination ul li button .icon-arrow-right {
-	width: 20px;
-	height: 20px;
-	position: relative;
-	top: -2px;
-}
-
-.pagination ul li button:hover .next-page-number {
-	display: block;
-}
-
-.portfolio-details-area .main-image {
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-.portfolio-details-area .main-image img {
-	width: 100%;
-}
-
-.portfolio-details-text {
-	display: flex;
-	column-gap: 40px;
-	justify-content: space-between;
-	margin-top: 32px;
-}
-
-.portfolio-details-text .short-info {
-	max-width: 242px;
-	flex: 0 0 auto;
-}
-
-.portfolio-details-text .short-info .info-item+.info-item {
-	margin-top: 18px;
-}
-
-.portfolio-details-text .short-info .info-item .subtitle {
-	font-size: 14px;
-	font-weight: 500;
-	margin-bottom: 4px;
-	color: var(--light-black);
-}
-
-.portfolio-details-text .short-info .info-item .website {
-	font-size: 16px;
-	font-weight: 500;
-	color: var(--primary);
-}
-
-.portfolio-details-text .short-info .info-item .website .arrow-up {
-	stroke: var(--primary);
-}
-
-.portfolio-details-text .overview p {
-	font-size: 15px;
-	font-weight: 400;
-	margin-bottom: 18px;
-}
-
-.portfolio-details-text .overview p b {
-	color: var(--black);
-}
-
-.portfolio-details-area .inner-images {
-	margin: 16px 0;
-	margin-bottom: 22px;
-}
-
-.portfolio-details-area .inner-images .image-item {
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-.portfolio-details-area .inner-images .image-item img {
-	border-radius: 8px;
-}
-
-.portfolio-details-area .more-info-block .more-info-title {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 1.5em;
-	margin-bottom: 20px;
-}
-
-.portfolio-details-area .more-info-block p {
-	font-size: 15px;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-.portfolio-details-area .more-info-block ul {
-	margin-bottom: 20px;
-}
-
-.portfolio-details-area .more-info-block ul li {
-	font-size: 15px;
-	font-weight: 400;
-	color: var(--paragraph);
-}
-
-.portfolio-details-area .more-info-block ul li b {
-	color: var(--black);
-}
-
-.portfolio-details-area .more-info-block .more-info-subtitle {
-	font-size: 18px;
-	font-weight: 500;
-	margin-bottom: 8px;
-}
-
-.portfolio-details-area .prev-and-next-btn {
-	display: flex;
-	column-gap: 40px;
-	margin-top: 35px;
-}
-
-.portfolio-details-area .prev-and-next-btn .btn {
-	flex-grow: 1;
-	height: 70px;
-	border: 1px solid var(--border);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 24px;
-	font-weight: 500;
-	color: var(--black);
-	width: 50%;
-}
-
-.portfolio-details-area .prev-and-next-btn .btn:hover {
-	background-color: var(--primary);
-	border-color: var(--primary);
-	color: var(--white);
-}
-
-/*=============================
-	08. Blog page CSS Start
+	07. Blog page CSS Start
 ===============================*/
 
 .article-area {
@@ -2003,58 +1585,8 @@ p {
 	margin-left: 4px;
 }
 
-
 /*=============================
-	09. Contact page CSS Start
-===============================*/
-
-.leave-comments-area .comments-box .form-select {
-	border-radius: 8px;
-	padding: 16px 24px;
-	border: 1px solid var(--border);
-}
-
-.leave-comments-area .comments-box .form-select:focus {
-	border-color: var(--light-black);
-}
-
-.contact-map-area {
-	aspect-ratio: 16/9;
-	border-radius: 8px;
-	overflow: hidden;
-	margin-top: 56px;
-}
-
-.contact-map-area iframe {
-	width: 100% !important;
-	height: 100% !important;
-}
-
-.ajax-response.error {
-	margin-top: 20px;
-	color: red;
-	font-size: 14px;
-	font-weight: 500;
-	background-color: rgba(255, 0, 0, 0.1);
-	border: 1px solid rgba(255, 0, 0, 0.5);
-	border-radius: 8px;
-	padding: 10px 20px;
-}
-
-.ajax-response.success {
-	margin-top: 20px;
-	color: green;
-	background-color: rgba(0, 128, 0, 0.1);
-	border: 1px solid rgba(0, 128, 0, 0.5);
-	font-weight: 500;
-	font-size: 14px;
-	font-weight: 500;
-	border-radius: 8px;
-	padding: 10px 20px;
-}
-
-/*=============================
-	10. Footer CSS Start
+	8. Footer CSS Start
 ===============================*/
 
 .footer-area {
@@ -2077,7 +1609,7 @@ p {
 }
 
 /*=============================
-	11. Theme Control CSS Start
+	9. Theme Control CSS Start
 ===============================*/
 
 .dark-theme {
@@ -2422,26 +1954,6 @@ p {
 	color: var(--dark-theme-white);
 }
 
-.dark-theme .portfolio-area .portfolio-item .image {
-	background-color: var(--dark-theme-black);
-}
-
-.dark-theme .portfolio-area .portfolio-item .text .info .title {
-	color: var(--dark-theme-light-white);
-}
-
-.dark-theme .portfolio-area .portfolio-item .text .info .title:hover {
-	color: var(--primary);
-}
-
-.dark-theme .portfolio-area .portfolio-item .text .visite-btn a {
-	color: var(--dark-theme-light-white);
-}
-
-.dark-theme .portfolio-area .portfolio-item .text .visite-btn a:hover {
-	color: var(--primary);
-}
-
 .dark-theme .pagination ul li button {
 	border-color: var(--black);
 	color: var(--light-black);
@@ -2533,41 +2045,41 @@ p {
 	color: var(--white);
 }
 
-.dark-theme .portfolio-details-text .overview p {
+.dark-theme .-details-text .overview p {
 	color: var(--dark-theme-light-white);
 }
 
-.dark-theme .portfolio-details-text .overview p b {
+.dark-theme .-details-text .overview p b {
 	color: var(--dark-theme-white);
 }
 
-.dark-theme .portfolio-details-area .more-info-block p {
+.dark-theme .-details-area .more-info-block p {
 	color: var(--dark-theme-light-white);
 }
 
-.dark-theme .portfolio-details-area .more-info-block .more-info-title {
+.dark-theme .-details-area .more-info-block .more-info-title {
 	color: var(--dark-theme-white);
 }
 
-.dark-theme .portfolio-details-area .more-info-block .more-info-subtitle {
+.dark-theme .-details-area .more-info-block .more-info-subtitle {
 	color: var(--dark-theme-white);
 }
 
-.dark-theme .portfolio-details-area .more-info-block ul li {
+.dark-theme .-details-area .more-info-block ul li {
 	color: var(--dark-theme-light-white);
 }
 
-.dark-theme .portfolio-details-area .more-info-block ul li b {
+.dark-theme .-details-area .more-info-block ul li b {
 	color: var(--dark-theme-white);
 }
 
-.dark-theme .portfolio-details-area .prev-and-next-btn .btn {
+.dark-theme .-details-area .prev-and-next-btn .btn {
 	background-color: var(--dark-theme-black);
 	border: 1px solid var(--black);
 	color: var(--light-black);
 }
 
-.dark-theme .portfolio-details-area .prev-and-next-btn .btn:hover {
+.dark-theme .-details-area .prev-and-next-btn .btn:hover {
 	background-color: var(--primary);
 	color: var(--white);
 }
